@@ -122,7 +122,7 @@ GEM
     execjs (2.7.0)
     fast_jsonapi (1.5)
       activesupport (>= 4.2)
-    ffaker (2.14.0)
+    ffaker (2.15.0)
     ffi (1.12.2)
     friendly_id (5.3.0)
       activerecord (>= 4.0.0)
