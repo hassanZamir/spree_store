@@ -140,6 +140,6 @@ default: &default
   username: Spree
   password: <%= ENV['APPNAME_DATABASE_PASSWORD'] %>
 
-development:
+production:
   <<: *default
   database: appname_development
