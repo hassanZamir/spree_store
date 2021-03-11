@@ -1,14 +1,14 @@
 <% if spree_navigation_data.any? %>
-  <ul class="nav h-100 main-nav-bar">
+  <ul class="nav h-100 main-nav-bar d-none d-xl-flex w-100 background-white justify-content-center">
     <% spree_navigation_data.each do |root| %>
       <li class="navbar main-nav-bar-dropdown main-nav-bar-category">
-        <%= link_to root[:title], root[:url], class: "p-2 main-nav-bar-item main-nav-bar-category-button" %>
+        <%= link_to root[:title], root[:url], class: "p-2 main-nav-bar-item main-nav-bar-category-button px-4" %>
         <% if root[:items].present? || root[:promo_banners].present? %>
           <div class="w-100 shadow main-nav-bar-category-dropdown">
             <div class="container p-0 d-flex justify-content-xl-around mx-auto">
               <% if root[:items].present? %>
-                <div class="row">
-                  <div class="category-links">
+                <div class="row justify-content-between">
+                  <div class="category-links w-20">
                     <% if root[:subtitle].present? %>
                       <div class="category-links-header text-uppercase">
                         <%= root[:subtitle] %>
@@ -39,7 +39,10 @@
                       </div>
                     <% end %>
                   <% end %>
-                <% end %>
+                <% else %>
+                  <div class="category-image text-center mx-3" style="visibility: hidden;"></div>
+                  <div class="category-image text-center mx-3" style="visibility: hidden;"></div>
+                <% end%>
               </div>
             </div>
           </div>

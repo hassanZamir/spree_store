@@ -4,18 +4,10 @@ default:
       subtitle: Categories
       url: /t/women
       items:
-        - :title: Skirts
-          :url: /t/women/skirts
-        - :title: Dresses
-          :url: /t/women/dresses
-        - :title: Shirts and Blouses
-          :url: /t/women/shirts-and-blouses
-        - :title: Sweaters
-          :url: /t/women/sweaters
-        - :title: Tops and T-shirts
-          :url: /t/women/tops-and-t-shirts
-        - :title: Jackets and Coats
-          :url: /t/women/jackets-and-coats
+        - :title: Shalwar Kamiz
+          :url: /t/women/shalwar-kamiz
+        - :title: Winter Wear
+          :url: /t/women/winter-wear
       promo_banners:
         - subtitle: New collection
           title: Summer 2019
@@ -31,10 +23,10 @@ default:
       items:
         - :title: Shirts
           :url: /t/men/shirts
-        - :title: T-shirts
-          :url: /t/men/t-shirts
-        - :title: Sweaters
-          :url: /t/men/sweaters
+        - :title: Shalwar Kamiz
+          :url: /t/men/shalwar-kamiz
+        - :title: Winter Wear
+          :url: /t/men/winter-wear
         - :title: Jackets and Coats
           :url: /t/men/jackets-and-coats
       promo_banners:
@@ -46,22 +38,13 @@ default:
           title: Get up to 30% off
           url: /t/special-offers/30-off
           image: 'meganav/promo_banner_right-second-category.jpg'
-    - title: Sportswear
+    - title: Towels
       subtitle: Categories
-      url: /t/sportswear
+      url: /t/towels
       items:
-        - :title: Tops
-          :url: /t/sportswear/tops
-        - :title: Sweatshirts
-          :url: /t/sportswear/sweatshirts
-        - :title: Pants
-          :url: /t/sportswear/pants
-      promo_banners:
-        - subtitle: New collection
-          title: Summer 2019
-          url: /t/new-collection/summer-2019
-          image: 'meganav/promo_banner_left-third-category.jpg'
-        - subtitle: Special Offers
-          title: Get up to 30% off
-          url: /t/special-offers/30-off
-          image: 'meganav/promo_banner_right-third-category.jpg'
+        - :title: Bed Room
+          :url: /t/towels/bed-room
+        - :title: Kids
+          :url: /t/towels/kids
+        - :title: Kitchen
+          :url: /t/towels/kitchen

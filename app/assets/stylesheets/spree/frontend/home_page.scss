@@ -1,0 +1,63 @@
+@import "variables/variables.scss";
+
+body {
+    padding-top: 150px;
+}
+
+.main-nav-bar-item {
+    font-size: 20px;
+}
+
+#main-nav-bar {
+    margin: auto;
+    padding: 15px 0px;
+}
+
+.turbolinks-progress-bar {
+    height: 5px;
+    background-color: green !important;
+}
+
+.nav-search {
+    width: 688px;
+    display: inline-block;
+    height: 45px;
+    line-height: 45px;
+    background-color: #fff;
+    border-radius: 3px;
+    position: relative;
+}
+
+.search-position {
+    top: 0px;
+    right: 5px;
+}
+
+input[type="search"] {
+    outline: none !important;
+}
+input[type='search']::-webkit-search-cancel-button {
+    display: none;
+}
+.main-nav-bar-category-button {
+    color: $font-color;
+}
+.main-nav-bar-category:hover .main-nav-bar-category-button {
+    color: lighten($color: $font-color, $amount: 20);
+}
+.main-nav-bar-category {
+    padding: 0px;
+}
+.main-nav-bar-category-dropdown {
+    top: 145px;
+}
+.header-spree {
+    background: transparent;
+    flex-direction: column;
+    height: 75px;
+
+    .header-spree-fluid { background: $header-background }
+    .user-header { background: white; }
+}
+.text-primary { color: $font-color !important;}
+.background-white { background: white;}

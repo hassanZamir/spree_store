@@ -1,19 +1,19 @@
-<%= form_tag spree.products_path, method: :get, class: "py-md-1 d-flex align-items-center" do %>
-  <%= search_field_tag :keywords,
-                       params[:keywords],
-                       placeholder: Spree.t(:search),
-                       autofocus: true,
-                       class: " border-0 p-3"
-  %>
-  <label class="m-0">
-    <input type="submit">
-    <%= icon(name: 'search',
-             classes: 'd-md-none',
-             width: 20,
-             height: 20) %>
-    <%= icon(name: 'search',
-             classes: 'd-none d-md-inline',
-             width: 27,
-             height: 27) %>
-  </label>
-<% end %>
+<div class="nav-search">
+  <%= form_tag spree.products_path, method: :get do %>
+    <%= search_field_tag :keywords,
+                        params[:keywords],
+                        placeholder: Spree.t(:search),
+                        autofocus: true,
+                        class: " border-0 w-100 py-0 px-2 rounded shadow-none"
+    %>
+    <div class="position-absolute search-position">
+      <label class="m-0">
+        <input type="submit" class="d-none">
+        <%= icon(name: 'search',
+                classes: 'd-none d-md-inline',
+                width: 27,
+                height: 27) %>
+      </label>
+    </div>
+  <% end %>
+</div>

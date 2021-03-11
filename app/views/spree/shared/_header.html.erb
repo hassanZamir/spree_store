@@ -2,6 +2,20 @@
 <% cache spree_nav_cache_key('header') do %>
   <div id="spree-header" data-turbolinks-permanent>
     <header id="header" class="d-flex align-items-center header-spree">
+      <div class="px-3 d-flex align-items-center justify-content-end user-header w-100">
+          <div class="mr-3 text-primary">My Orders</div>
+          <div class="dropdown navbar-right-dropdown">
+                <button id="account-button" type="button" data-toggle="dropdown" 
+                  class="navbar-right-dropdown-toggle text-primary" 
+                  aria-label="<%= Spree.t('nav_bar.show_user_menu')%>">
+                  
+                  Login
+                </button>
+
+                <div id="link-to-account" class="dropdown-menu dropdown-menu-right text-right">
+                </div>
+          </div>
+      </div>
       <div class="container-fluid h-100 header-spree-fluid">
         <div class="d-flex flex-nowrap align-items-center h-100">
           <div class="d-xl-none flex-grow-1 header-spree-fluid-mobile-menu-toggler">
@@ -15,7 +29,8 @@
             <%= logo %>
           </figure>
           <div id="main-nav-bar" class="flex-grow-0 d-none d-xl-block h-100 header-spree-fluid-primary-navigation">
-            <%= render partial: 'spree/shared/main_nav_bar' %>
+            <%= render partial: 'spree/shared/search' %>
+            <%- # render partial: 'spree/shared/main_nav_bar' -%>
           </div>
           <div id="top-nav-bar" class="flex-grow-1 header-spree-fluid-secondary-navigation">
             <%= render partial: 'spree/shared/nav_bar' %>
@@ -23,6 +38,7 @@
           <%= render partial: 'spree/shared/mobile_navigation' %>
         </div>
       </div>
+      <%= render partial: 'spree/shared/main_nav_bar' %>
     </header>
   </div>
 <% end %>

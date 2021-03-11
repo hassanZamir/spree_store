@@ -8,6 +8,3 @@
  *= require_self
  *= require_tree .
 */
-.main-nav-bar-item {
-    font-size: 16px;
-}
